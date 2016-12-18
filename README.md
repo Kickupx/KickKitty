@@ -1,0 +1,2 @@
+# KickKitty
+WoW Auto kicker
