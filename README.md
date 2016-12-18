@@ -1,7 +1,7 @@
 # KickKitty
 WoW Auto kicker
 
-This tool is based on auto [URL="http://www.ownedcore.com/forums/members/187464-jozsab1.html"]jozsab1[/URL]'s Spell Kicker and is merely a port with some bugfixes to it using [URL="http://botkitty.com"]BotKitty[/URL]. The original version is [URL="http://www.ownedcore.com/forums/world-of-warcraft/world-of-warcraft-bots-programs/509163-spell-kicker-interrupt-cast-autoit-no-memory-read-any-wow-version.html"]here[/URL]. All credit goes to him. It is tested on Legion and 3.3.5. The reason this bot is written is to explore the real world applicability of [URL="http://botkitty.com"]BotKitty[/URL] which provides an scripting environment for general bot programming (Disclaimer, I am the author of it).
+This tool is based on auto [jozsab1´s](http://www.ownedcore.com/forums/members/187464-jozsab1.html) Spell Kicker and is merely a port with some bugfixes to it using [BotKitty](http://botkitty.com). The original version is [here](http://www.ownedcore.com/forums/world-of-warcraft/world-of-warcraft-bots-programs/509163-spell-kicker-interrupt-cast-autoit-no-memory-read-any-wow-version.html). All credit goes to him. It is tested on Legion and 3.3.5. The reason this bot is written is to explore the real world applicability of [BotKitty](http://botkitty.com) which provides an scripting environment for general bot programming (Disclaimer, I am the author of it).
 
 ### This is what is supported now: (Copied from jozsab1's version)
 - hard to detect by blizz
@@ -28,7 +28,7 @@ However there is two bugs which the original version does have which is fixed he
 ### Setup:
 - Create an empty directory in the wow addon directory, maybe named KickKitty.
 - Copy the contents of the addon directory to the directory your created above
-- Download and install [URL="http://botkitty.com"]BotKitty[/URL].
+- Download and install [BotKitty](http://botkitty.com).
 - Start BotKitty and in the BotManager add the KickKitty bot.
 - Start WoW and enter world.
 - There will be a green frame in the middle of screen now. Move it by ctrl+drag the frame to any appropriate location.
