@@ -1,0 +1,9 @@
+{
+    "author": "Kickupx",
+    "executable": "bot.js",
+    "name": "KickKitty",
+    "type": "process",
+    "process_name": "Wow.exe",
+    "version": "0.1.0",
+    "description": "Kicks spells. Based on jozsab1's Spell Kicker. All credit goes to him. Github: https://github.com/Tudi/WowRetriHelperBot/tree/master/KickBot"
+}
