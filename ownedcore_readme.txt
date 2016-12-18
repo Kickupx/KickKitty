@@ -23,7 +23,7 @@ This tool is based on auto [URL="http://www.ownedcore.com/forums/members/187464-
 However there is two bugs which the original version does have which is fixed here. And that is that you can run BotKitty and WoW in different "bitness" versions and it will just work and bot can run in fully qualified fullscreen mode. I would love to pull them to the original version but this version does not use AutoIt which is where the problem lies.
 
 [SIZE=5]Setup:[/SIZE]
-- Create an empty directory in the wow addon directory, maybe named KickKitty.
+- Create an empty directory in the wow addon directory with a name of your liking, maybe named KickKitty.
 - Copy the contents of the addon directory to the directory your created above
 - Download and install [URL="http://botkitty.com"]BotKitty[/URL].
 - Start BotKitty and in the BotManager add the KickKitty bot.

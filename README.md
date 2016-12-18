@@ -23,11 +23,11 @@ This tool is based on auto [jozsab1´s](http://www.ownedcore.com/forums/members/
 - option to use cyrilic ( UTF-8 ) keys for keybinds ( not practically tested )
 - free, open source. You can change it and use your own version. Please post all your changes here, even if it is very small ( it makes me happy )
 
-However there is two bugs which the original version does have which is fixed here. And that is that you can run BotKitty and WoW in different "bitness" versions and it will just work and bot can run in both fully qualified fullscreen mode. I would love to pull them to the original version but this version does not use AutoIt which is where the problem lies.
+However there is two bugs which the original version does have which is fixed here. And that is that you can run BotKitty and WoW in different "bitness" versions and it will just work and bot can run in fully qualified fullscreen mode. I would love to pull them to the original version but this version does not use AutoIt which is where the problem lies.
 
 ### Setup:
-- Create an empty directory in the wow addon directory, maybe named KickKitty.
-- Copy the contents of the addon directory to the directory your created above
+- Create an empty directory in the wow addon directory with a name of your liking, maybe named KickKitty.
+- Copy the contents of the addon directory to the directory your created above.
 - Download and install [BotKitty](http://botkitty.com).
 - Start BotKitty and in the BotManager add the KickKitty bot.
 - Start WoW and enter world.
