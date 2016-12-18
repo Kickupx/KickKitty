@@ -37,6 +37,6 @@ However there is two bugs which the original version does have which is fixed he
 
 ### Improve the bot:
 - Report bugs with KickKitty on github
-- Report bugs with BotKitty [](http://issuetracker.botkitty.com here).
+- Report bugs with BotKitty [here](http://issuetracker.botkitty.com).
 - If you hate it, let me know^^
 - If you like it, say thanks^^
