@@ -14,7 +14,10 @@ var kickbot_paths = {};
 /**
  * @type GUI.Window
  */
-var wow_window = Processes.open(Processes.selectedPid).mainWindow();
+var wow_window = Processes.open(Processes.selectedPid).mainWindow("World of Warcraft");
+if(!wow_window) {
+    throw "Could not find main window";
+}
 
 
 //wow_window is now initialized and ready for use
