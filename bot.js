@@ -14,10 +14,10 @@ var kickbot_paths = {};
 /**
  * @type GUI.Window
  */
-var wow_window = GUI.singleWindow("World of Warcraft");
+var wow_window = findWindow();
 
 //wow_window is now initialized and ready for use
-var communication_frame_pos = tryGuessLoc();
+var communication_frame_pos = findCommunicationFrame();
 if(!communication_frame_pos)
     throw "Could not find position of Addon frame";
 else
@@ -26,35 +26,35 @@ else
 var first_color = wow_window.pixelColor(communication_frame_pos);
 printColor("Current color: ", first_color);
 
-//Starting actual loop
+//Save initial color retrieved
 var last_color = first_color;
 
 for(;;) {
     var color = wow_window.pixelColor(communication_frame_pos);
     
-    //Do not spam the button
+    //Do not spam commands
     if(color.r === last_color.r
         && color.g === last_color.g
         && color.b === last_color.b)
         continue;
     
-    printColor("Found new color: ", color);
+    printColor("Color changed to: ", color);
 
     last_color = color;
 
     var spell_name_idx = (color.g - FirstValidRGB) / RGBStep;
     var target_idx = (color.r - FirstValidRGB) / RGBStep;
-    var keyOrd = color.b;
+    var key = color.b;
 
-    eventImageFound(spell_name_idx, target_idx, keyOrd);
+    dispatchCommand(spell_name_idx, target_idx, key);
 }
 
-function eventImageFound(spell_idx, target_idx, keyOrd) {
-    if(keyOrd <= 0 && (target_idx > 6 || spell_idx < 0 || spell_idx > 20))
+function dispatchCommand(spell_idx, target_idx, key) {
+    if(key <= 0 && (target_idx > 6 || spell_idx < 0 || spell_idx > 20))
         return;
 
-    if(keyOrd != 0 && keyOrd != LuaIdle) {
-        var key = String.fromCharCode(keyOrd);
+    if(key != 0 && key != LuaIdle) {
+        var key = String.fromCharCode(key);
         print("Sending key ", key);
 
         try {
@@ -67,12 +67,14 @@ function eventImageFound(spell_idx, target_idx, keyOrd) {
     }
 }
 
-function tryGuessLoc() {
-    var pos = wow_window.findFirstPixel({
+function findWindow() {
+    return GUI.singleWindow("World of Warcraft");
+}
+
+function findCommunicationFrame() {
+    return wow_window.findFirstPixel({
         r: 0, g: 255, b: 0
     });
-
-    return pos;
 }
 
 function printColor(prefix, color) {
