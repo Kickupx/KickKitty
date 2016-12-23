@@ -17,7 +17,6 @@ var kickbot_paths = {};
 var wow_window = GUI.singleWindow("World of Warcraft");
 
 //wow_window is now initialized and ready for use
-
 var communication_frame_pos = tryGuessLoc();
 if(!communication_frame_pos)
     throw "Could not find position of Addon frame";
