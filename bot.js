@@ -54,10 +54,16 @@ function eventImageFound(spell_idx, target_idx, keyOrd) {
         return;
 
     if(keyOrd != 0 && keyOrd != LuaIdle) {
-        print("Sending key ", String.fromCharCode(keyOrd));
-        wow_window.keyboardCommand({
-            key: String.fromCharCode(keyOrd)
-        });
+        var key = String.fromCharCode(keyOrd);
+        print("Sending key ", key);
+
+        try {
+            wow_window.keyboardCommand({
+                key: key
+            });
+        } catch(e) {
+            //If Lua addon sends wrong keys we get here
+        }
     }
 }
 
