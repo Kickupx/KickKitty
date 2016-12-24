@@ -72,9 +72,16 @@ function findWindow() {
 }
 
 function findCommunicationFrame() {
-    return wow_window.findFirstPixel({
+    var pos = wow_window.findFirstPixel({
         r: 0, g: 255, b: 0
     });
+
+    if(pos) {
+        pos.x += 2;
+        pos.y += 2;
+    }
+
+    return pos;
 }
 
 function printColor(prefix, color) {
