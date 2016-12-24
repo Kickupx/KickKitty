@@ -15,6 +15,7 @@ var kickbot_paths = {};
  * @type GUI.Window
  */
 var wow_window = findWindow();
+var first_color;
 
 //wow_window is now initialized and ready for use
 var communication_frame_pos = findCommunicationFrame();
@@ -23,8 +24,10 @@ if(!communication_frame_pos)
 else
     Log.notify("Found Addon frame at (", Math.floor(communication_frame_pos.x), ", ", Math.floor(communication_frame_pos.y), ")");
 
-var first_color = wow_window.pixelColor(communication_frame_pos);
-printColor("Current color: ", first_color);
+first_color = wow_window.pixelColor(communication_frame_pos);
+if(first_color.g != 255)
+    throw "KickKitty does not seem to have found the communication frame properly. Try start the bot again.";
+
 
 //Save initial color retrieved
 var last_color = first_color;
