@@ -1,10 +1,10 @@
-## Interface: 30000
-## Title: KickBot
+## Interface: 70000
+## Title: KickKitty
 ## Author: Tudi
-## Version: 4.0.1
+## Version: 0.1.5
 ## Notes: Watch your target / focustarget / arenatarget and cast spells accordingly
 ## DefaultState: Enabled
 ## LoadOnDemand: 0
 ## SavedVariablesPerCharacter: SpellNameKeyBinds
-KickBot.lua
-KickBot.xml
+KickKitty.lua
+KickKitty.xml
