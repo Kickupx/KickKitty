@@ -219,7 +219,7 @@ function KickBot_OnLoad(self)
 	KickBotFrame.texture:SetTexture( 1, 1, 1, 1 )
 	KickBotFrame.texture:SetAllPoints()
 
-    print("KickBot loaded.Don't forget to start AU3 script. To stop AU3 press '['. To pause AU3 press '\\'. For advanced settings edit KickBot.lua");
+    print("KickBot loaded. For advanced settings edit KickBot.lua");
 end
 
 local function SendToAU3KeyPress( AsciiChar )
