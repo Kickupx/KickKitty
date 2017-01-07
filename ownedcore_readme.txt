@@ -20,15 +20,22 @@ This tool is based an automatic spell kicker which kicks at beginning of channel
 - option to use cyrilic ( UTF-8 ) keys for keybinds ( not practically tested )
 - free, open source. You can change it and use your own version. Please post all your changes here, even if it is very small ( it makes me happy )
 
-However there is two bugs which the original version does have which is fixed here. And that is that you can run BotKitty and WoW in different "bitness" versions and it will just work and bot can run in fully qualified fullscreen mode. I would love to pull them to the original version but this version does not use AutoIt which is where the problem lies.
+However there is two bugs which the original version does have which is fixed here. And that is that you can run BotKitty and WoW in different "bitness" versions and it will just work. I would love to pull them to the original version but this version does not use AutoIt which is where the problem lies.
 
-[SIZE=5]Setup:[/SIZE]
-- Create an empty directory in the wow addon directory with a name of your liking, maybe named KickKitty.
-- Copy the contents of the addon directory to the directory your created above
+[SIZE=5]Bugs:[/SIZE]
+- Currently window fullscreen does not work
+
+[SIZE=5]Setup(Notice this was changed 7 january):[/SIZE]
+- Download [URL="http://github.com/Kickupx/KicKKitty"]KickKitty[/URL]
+- Extract it in a directory where you want to keep it
+- Run KickKitty/addon/GenerateRandomName.exe file.
+- In the KickKitty root directory there will be a directory with a random name
+- Copy that directory to your WoW addon directory
 - Download and install [URL="http://botkitty.com"]BotKitty[/URL].
 - Start BotKitty and in the BotManager add the KickKitty bot.
-- Start WoW and enter world.
-- There will be a green frame in the middle of screen now. Move it by ctrl+drag the frame to any appropriate location.
+- Start WoW, and make sure that your addon is loaded. It is the same name as the generate random name tool generated.
+- Enter world.
+- There will be a green frame in the middle of screen now. Move it by ctrl+drag the frame to any appropriate location. But make sure it is not hidden.
 - In BotKitty select KickKitty and hit start.
 - Congratz, bot is now running.
 
@@ -50,3 +57,9 @@ If you think this antivirus check is not good enough, let me know.
 - x86 BotKitty: [URL="http://product.botkitty.com/BotKitty_installer_x86.exe"]http://product.botkitty.com/BotKitty_installer_x86.exe[/URL]
 - x64 BotKitty: [URL="http://product.botkitty.com/BotKitty_installer_x64.exe"]http://product.botkitty.com/BotKitty_installer_x64.exe[/URL]
 - KickKitty: [URL="https://github.com/Kickupx/KickKitty"]Github[/URL]
+
+[SIZE=4]Blog[/SIZE]
+If you want to explore how it is written I have written a [URL="http://botkitty.com/blog/2016/12/29/writing-an-wow-auto-kicker/"]blog[/URL] about it.
+
+[SIZE=4]Edit:[/SIZE]
+Special thanks to JasDevi and Vekom for reporting bugs! Really appreciate it
