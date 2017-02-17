@@ -1,3 +1,8 @@
+#No longer supported
+BotKitty has been rewritten to C# and with that this project is dead.
+Maybe I will rewrite KickKitty to be using the new version but that is far down the road.
+
+
 # KickKitty
 WoW Auto kicker
 
